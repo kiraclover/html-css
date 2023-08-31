@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .prompt, .pickup-box, .destination-box, .request-button, .schedule-button{
+                font-family: Arial;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .prompt{
+                font-size: 32px;  
+                margin-bottom: 24px;  
+            }
+
+            .destination-box{
+                display: block;
+                margin-bottom: 28px;
+            }
+
+            .pickup-box{
+                margin-bottom: 8px;
+            }
+
+            .destination-box, .pickup-box{
+                width: 300px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                background-color: rgb(228, 228, 228);
+                color: grey;
+                border: none;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            }
+
+            .destination-box:focus, .pickup-box:focus{
+                outline: none;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            }
+
+            .request-button{
+                border: none;
+                background-color: black;
+                color: white;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                transition: opacity 0.15s;
+            }
+
+            .request-button:hover, .schedule-button:hover{
+                cursor: pointer;
+                opacity: 0.7;
+            }
+
+            .request-button:active, .schedule-button:active{
+                opacity: 0.5;
+            }
+
+            .schedule-button{
+                border: none;
+                background-color: rgb(228, 228, 228);
+                color: black;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                transition: opacity 0.15s;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="prompt">Request a ride now</p>
+        <input class="pickup-box" type="text" placeholder="Enter pickup location" />
+        <input class="destination-box" type="text" placeholder="Enter destination" />
+        <button class="request-button">Request now</button>
+        <button class="schedule-button">Schedule for later</button>
+    </body>
+</html>
