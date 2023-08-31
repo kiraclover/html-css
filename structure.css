@@ -1,0 +1,17 @@
+p{
+    font-family: Montserrat;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+.product-name{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 64px;
+}
+.benefit{
+    font-size: 32px;
+}
+.exclusive-feature{
+    text-decoration: underline;
+}
