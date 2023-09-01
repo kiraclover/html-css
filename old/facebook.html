@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .friend-suggestion{
+                width: 200px;
+                border: none;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+                border-radius: 5px;
+                transition: box-shadow 0.15s;
+                display: inline-block;
+                margin-right: 5px;
+            }
+
+            .friend-suggestion:hover{
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .profile-name, .mutual-friends, .add-friend-button, .ignore-button, .section-name{
+                font-family: Arial;
+            }
+
+            .profile-name, .mutual-friends{
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 10px;
+                margin-top: 5px;
+            }
+
+            .profile-name{
+                font-weight: bold;
+            }
+
+            .mutual-friends{
+                margin-bottom: 10px;
+            }
+
+            .profile-picture{
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+                object-position: left;
+                margin-top: 10px;
+                margin-left: 10px;
+                border-radius: 5px;
+            }
+
+            .add-friend-button, .ignore-button{
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+
+            .add-friend-button{
+                padding-top: 7px;
+                padding-bottom: 7px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 16px;
+                background-color: rgb(57, 133, 255);
+                border: none;
+                border-radius: 3px;
+                color: white;
+                font-weight: bold;
+                transition: opacity 0.15s;
+            }
+
+            .add-friend-button:hover{
+                opacity: 0.7;
+            }
+
+            .add-friend-button:active{
+                opacity: 0.5;
+            }
+
+            .ignore-button{
+                padding-top: 7px;
+                padding-bottom: 7px;
+                padding-left: 13px;
+                padding-right: 13px;
+                font-size: 16px;
+                margin-left: 0;
+                margin-right: 10px;
+                background-color: rgb(226, 226, 226);
+                color: rgb(61, 61, 61);
+                font-weight: bold;
+                border: none;
+                border-radius: 3px;
+                transition: opacity 0.15s;
+            }
+
+            .ignore-button:hover{
+                opacity: 0.7;
+            }
+
+            .ignore-button:active{
+                opacity: 0.5;
+            }
+
+            .section-name{
+                margin-top: 0;
+                margin-bottom: 10px;
+                font-size: 32px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="section-name">People you may know</p>
+        <div class="friend-suggestion">
+            <img class="profile-picture" src="thumbnail-1.webp"/>
+            <p class="profile-name">Mamhoud Rayan</p>
+            <p class="mutual-friends">3 mutual friends</p>
+            <button class="add-friend-button">Add friend</button>
+            <button class="ignore-button">Ignore</button>
+        </div>
+        <div class="friend-suggestion">
+            <img class="profile-picture" src="thumbnail-1.webp"/>
+            <p class="profile-name">Azerkouk Yahya</p>
+            <p class="mutual-friends">1 mutual friends</p>
+            <button class="add-friend-button">Add friend</button>
+            <button class="ignore-button">Ignore</button>
+        </div>
+        <div class="friend-suggestion">
+            <img class="profile-picture" src="thumbnail-1.webp"/>
+            <p class="profile-name">Blaibal Younes</p>
+            <p class="mutual-friends">6 mutual friends</p>
+            <button class="add-friend-button">Add friend</button>
+            <button class="ignore-button">Ignore</button>
+        </div>
+        <div class="friend-suggestion">
+            <img class="profile-picture" src="thumbnail-1.webp"/>
+            <p class="profile-name">Ait Rahhou Rayan</p>
+            <p class="mutual-friends">4 mutual friends</p>
+            <button class="add-friend-button">Add friend</button>
+            <button class="ignore-button">Ignore</button>
+        </div>
+    </body>
+</html>
