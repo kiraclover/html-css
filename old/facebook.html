@@ -32,7 +32,11 @@
             }
 
             .mutual-friends{
-                margin-bottom: 10px;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 5px;
+                display: inline-block;
+                font-size: 14px;
             }
 
             .profile-picture{
@@ -102,37 +106,90 @@
                 font-size: 32px;
                 font-weight: bold;
             }
+
+            .silly{
+                width: 30px;
+                height: 30px;
+                object-fit: cover;
+                object-position: top;
+                vertical-align: middle;
+                border-radius: 50%;
+            }
+
+            .mutual-friends-section{
+                margin-left: 10px;
+                margin-top: 3px;
+                margin-bottom: 5px;
+            }
         </style>
     </head>
     <body>
         <p class="section-name">People you may know</p>
-        <div class="friend-suggestion">
-            <img class="profile-picture" src="thumbnail-1.webp"/>
-            <p class="profile-name">Mamhoud Rayan</p>
-            <p class="mutual-friends">3 mutual friends</p>
-            <button class="add-friend-button">Add friend</button>
-            <button class="ignore-button">Ignore</button>
-        </div>
-        <div class="friend-suggestion">
-            <img class="profile-picture" src="thumbnail-1.webp"/>
-            <p class="profile-name">Azerkouk Yahya</p>
-            <p class="mutual-friends">1 mutual friends</p>
-            <button class="add-friend-button">Add friend</button>
-            <button class="ignore-button">Ignore</button>
-        </div>
-        <div class="friend-suggestion">
-            <img class="profile-picture" src="thumbnail-1.webp"/>
-            <p class="profile-name">Blaibal Younes</p>
-            <p class="mutual-friends">6 mutual friends</p>
-            <button class="add-friend-button">Add friend</button>
-            <button class="ignore-button">Ignore</button>
-        </div>
-        <div class="friend-suggestion">
-            <img class="profile-picture" src="thumbnail-1.webp"/>
-            <p class="profile-name">Ait Rahhou Rayan</p>
-            <p class="mutual-friends">4 mutual friends</p>
-            <button class="add-friend-button">Add friend</button>
-            <button class="ignore-button">Ignore</button>
+        <div class="friend-suggestions">
+            <div class="friend-suggestion">
+                <div class="profile-picture-section">
+                    <img class="profile-picture" src="thumbnail-1.webp"/>
+                </div>
+                <div class="friend-information-section">
+                    <p class="profile-name">Mamhoud Rayan</p>
+                    <div class="mutual-friends-section">
+                        <img class= "silly" src="silly.jpg" />
+                        <p class="mutual-friends">3 mutual friends</p>
+                    </div>
+                    <div class="actions-section">
+                        <button class="add-friend-button">Add friend</button>
+                        <button class="ignore-button">Ignore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="friend-suggestion">
+                <div class="profile-picture-section">
+                    <img class="profile-picture" src="thumbnail-1.webp"/>
+                </div>
+                <div class="friend-information-section">
+                    <p class="profile-name">Azerkouk Yahya</p>
+                    <div class="mutual-friends-section">
+                        <img class= "silly" src="silly.jpg" />
+                        <p class="mutual-friends">1 mutual friends</p>
+                    </div>
+                    <div class="actions-section">
+                        <button class="add-friend-button">Add friend</button>
+                        <button class="ignore-button">Ignore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="friend-suggestion">
+                <div class="profile-picture-section">
+                    <img class="profile-picture" src="thumbnail-1.webp"/>
+                </div>
+                <div class="friend-information-section">
+                    <p class="profile-name">Blaibal Younes</p>
+                    <div class="mutual-friends-section">
+                        <img class= "silly" src="silly.jpg" />
+                        <p class="mutual-friends">5 mutual friends</p>
+                    </div>
+                    <div class="actions-section">
+                        <button class="add-friend-button">Add friend</button>
+                        <button class="ignore-button">Ignore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="friend-suggestion">
+                <div class="profile-picture-section">
+                    <img class="profile-picture" src="thumbnail-1.webp"/>
+                </div>
+                <div class="friend-information-section">
+                    <p class="profile-name">Ait Rahhou Rayan</p>
+                    <div class="mutual-friends-section">
+                        <img class= "silly" src="silly.jpg" />
+                        <p class="mutual-friends">4 mutual friends</p>
+                    </div>
+                    <div class="actions-section">
+                        <button class="add-friend-button">Add friend</button>
+                        <button class="ignore-button">Ignore</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
