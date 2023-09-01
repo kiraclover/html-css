@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .tweet-box{
+                width: 467px;
+                border: none;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+                border-radius: 5px;
+            }
+
+            .tweet-type-box, .tweet-button{
+                font-family: Arial;
+            }
+
+            .silly, .tweet-type-box, .tweet-button{
+                vertical-align: middle;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+
+            .silly{
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                object-position: top;
+                border-radius: 25px;
+            }
+
+            .tweet-type-box{
+                font-size: 18px;
+                border: none;
+                margin-left: 3px;
+                width: 300px;
+            }
+
+            .tweet-type-box:focus{
+                outline: none;
+            }
+
+            .tweet-button{
+                background-color: rgb(29, 155, 240);
+                color: white;
+                border: none;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                padding-left: 16px;
+                padding-right: 16px;
+                border-radius: 35px;
+                font-weight: bold;
+                font-size: 15px;
+                cursor: pointer;
+                margin-right: 8px;
+                transition: box-shadow 0.15s;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tweet-box">
+            <img class="silly" src="silly.jpg" />
+            <input class="tweet-type-box" type="text" placeholder="What's happening?" />
+            <button class="tweet-button" >Tweet</button>
+        </div>
+    </body>
+</html>
