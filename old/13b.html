@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{
+                font-family: Roboto, Arial;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .root{
+                width: 350px;
+                border: none;
+                border-radius: 3px;
+                box-shadow: 0 0 10px rgb(0, 0, 0, 0.15);
+            }
+
+            .emails-container-title{
+                font-size: 13px;
+                font-weight: 500;
+                color: grey;
+                margin-left: 10px;
+                padding-top: 6px;
+                margin-bottom: 6px;
+            }
+
+            .email-picture{
+                height: 40px;
+                width: 40px;
+                object-fit: cover;
+                object-position: top;
+                border: none;
+                border-radius: 50%;
+                margin-left: 5px;
+            }
+
+            .email{
+                display: flex;
+                margin-right: 5px;
+                align-items: center;
+                padding-bottom: 10px;
+            }
+
+            .email-picture-section{
+                width: 50px;
+            }
+
+            .email-sender-and-time-section{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .email-info-section{
+                flex: 1;
+            }
+
+            .email-sender{
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .email-time{
+                font-size: 12px;
+                color: grey;
+            }
+
+            .email-title{
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .email-message-preview{
+                font-size: 14px;
+                color: grey;
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="root">
+            <p class="emails-container-title">ALL INBOXES</p>
+            <div class="emails-container">
+                <div class="email">
+                    <div class="email-picture-section">
+                        <img class="email-picture" src="silly.jpg" />
+                    </div>
+                    <div class="email-info-section">
+                        <div class="email-sender-and-time-section">
+                            <p class="email-sender">Chewy Promotions</p>
+                            <p class="email-time">4:58 PM</p>
+                        </div>
+                        <p class="email-title">Biggest sales of the year!</p>
+                        <p class="email-message-preview">Hey there! We're writing to tell you about our...</p>
+                    </div>
+                </div>
+
+                <div class="email">
+                    <div class="email-picture-section">
+                        <img class="email-picture" src="silly.jpg" />
+                    </div>
+                    <div class="email-info-section">
+                        <div class="email-sender-and-time-section">
+                            <p class="email-sender">Best Buy</p>
+                            <p class="email-time">12:32 PM</p>
+                        </div>
+                        <p class="email-title">Your Best Buy eReceipt</p>
+                        <p class="email-message-preview">Thank you for shopping at Best Buy, here is...</p>
+                    </div>
+                </div>
+
+                <div class="email">
+                    <div class="email-picture-section">
+                        <img class="email-picture" src="silly.jpg" />
+                    </div>
+                    <div class="email-info-section">
+                        <div class="email-sender-and-time-section">
+                            <p class="email-sender">Netflix</p>
+                            <p class="email-time">9:00 AM</p>
+                        </div>
+                        <p class="email-title">Here's what's coming soon to Netflix</p>
+                        <p class="email-message-preview">Brand new movies and shows, old favorites...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
