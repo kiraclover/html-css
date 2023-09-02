@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .flexbox{
+                display: flex;
+                flex-direction: column;
+                border-style: solid;
+                border-color: grey;
+                border-width: 1px;
+                border-radius: 5px;
+                width: 300px;
+            }
+
+            p{
+                margin-top: 0;
+                margin-bottom: 0;
+                font-weight: bold;
+                font-family: Arial;
+            }
+
+            .home-section, home-section, .messages-section{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .home-section-notifs, .notifications-section-notifs, .notifications-section-notifs{
+                background-color: rgb(64, 118, 255);
+                color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 3px;
+                padding-bottom: 2px;
+                border-radius: 15px;
+            }
+
+            .home-section-title, .notifications-section-title, .messages-section-title{
+                padding-top: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flexbox">
+            <div class="home-section">
+                <p class="home-section-title">Home</p>
+                <p class="home-section-notifs">14</p>
+            </div>
+            <div class="home-section">
+                <p class="notifications-section-title">Notification</p>
+                <p class="notifications-section-notifs">3</p>
+            </div>
+            <div class="messages-section">
+                <p class="messages-section-title">Notification</p>
+                <p class="notifications-section-notifs">3</p>
+            </div>
+        </div>
+    </body>
+</html>

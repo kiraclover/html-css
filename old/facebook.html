@@ -2,14 +2,18 @@
 <html>
     <head>
         <style>
+            .friend-suggestions{
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+                column-gap: 10px;
+            }
+
             .friend-suggestion{
                 width: 200px;
                 border: none;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
                 border-radius: 5px;
                 transition: box-shadow 0.15s;
-                display: inline-block;
-                margin-right: 5px;
             }
 
             .friend-suggestion:hover{
@@ -32,10 +36,9 @@
             }
 
             .mutual-friends{
-                margin-top: 0;
+                margin-top: 5px;
                 margin-bottom: 0;
                 margin-left: 5px;
-                display: inline-block;
                 font-size: 14px;
             }
 
@@ -117,9 +120,12 @@
             }
 
             .mutual-friends-section{
+                display: grid;
                 margin-left: 10px;
                 margin-top: 3px;
                 margin-bottom: 5px;
+                margin-right: 10px;
+                grid-template-columns: 30px 1fr;
             }
         </style>
     </head>
@@ -133,8 +139,12 @@
                 <div class="friend-information-section">
                     <p class="profile-name">Mamhoud Rayan</p>
                     <div class="mutual-friends-section">
-                        <img class= "silly" src="silly.jpg" />
-                        <p class="mutual-friends">3 mutual friends</p>
+                        <div class="mutual-friends-profile-picture-section">
+                            <img class= "silly" src="silly.jpg" />
+                        </div>
+                        <div class="mutual-friends-profile-name-section">
+                            <p class="mutual-friends">3 mutual friends</p>
+                        </div>
                     </div>
                     <div class="actions-section">
                         <button class="add-friend-button">Add friend</button>
@@ -142,15 +152,20 @@
                     </div>
                 </div>
             </div>
+
             <div class="friend-suggestion">
                 <div class="profile-picture-section">
                     <img class="profile-picture" src="thumbnail-1.webp"/>
                 </div>
                 <div class="friend-information-section">
-                    <p class="profile-name">Azerkouk Yahya</p>
+                    <p class="profile-name">Mamhoud Rayan</p>
                     <div class="mutual-friends-section">
-                        <img class= "silly" src="silly.jpg" />
-                        <p class="mutual-friends">1 mutual friends</p>
+                        <div class="mutual-friends-profile-picture-section">
+                            <img class= "silly" src="silly.jpg" />
+                        </div>
+                        <div class="mutual-friends-profile-name-section">
+                            <p class="mutual-friends">3 mutual friends</p>
+                        </div>
                     </div>
                     <div class="actions-section">
                         <button class="add-friend-button">Add friend</button>
@@ -158,31 +173,20 @@
                     </div>
                 </div>
             </div>
+
             <div class="friend-suggestion">
                 <div class="profile-picture-section">
                     <img class="profile-picture" src="thumbnail-1.webp"/>
                 </div>
                 <div class="friend-information-section">
-                    <p class="profile-name">Blaibal Younes</p>
+                    <p class="profile-name">Mamhoud Rayan</p>
                     <div class="mutual-friends-section">
-                        <img class= "silly" src="silly.jpg" />
-                        <p class="mutual-friends">5 mutual friends</p>
-                    </div>
-                    <div class="actions-section">
-                        <button class="add-friend-button">Add friend</button>
-                        <button class="ignore-button">Ignore</button>
-                    </div>
-                </div>
-            </div>
-            <div class="friend-suggestion">
-                <div class="profile-picture-section">
-                    <img class="profile-picture" src="thumbnail-1.webp"/>
-                </div>
-                <div class="friend-information-section">
-                    <p class="profile-name">Ait Rahhou Rayan</p>
-                    <div class="mutual-friends-section">
-                        <img class= "silly" src="silly.jpg" />
-                        <p class="mutual-friends">4 mutual friends</p>
+                        <div class="mutual-friends-profile-picture-section">
+                            <img class= "silly" src="silly.jpg" />
+                        </div>
+                        <div class="mutual-friends-profile-name-section">
+                            <p class="mutual-friends">3 mutual friends</p>
+                        </div>
                     </div>
                     <div class="actions-section">
                         <button class="add-friend-button">Add friend</button>
