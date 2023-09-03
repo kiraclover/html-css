@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Position</title>
+        <style>
+                .div1, .div2{
+                    width: 200px;
+                    height: 200px;
+                }
+
+                .div1{
+                    background-color: lightcoral;
+                }
+
+                .div2{
+                    background-color: lightseagreen;
+                }
+
+                .header{
+                    background-color: black;
+                    color: white;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 50px;
+                }
+
+                body{
+                    height: 3000px;
+                    margin-left: 0;
+                    margin-top: 0;
+                    margin-right: 0;
+                    padding-top: 60px;
+                    padding-left: 110px;
+                }
+
+                .sidebar{
+                    background-color: lightgreen;
+                    position: fixed;
+                    width: 100px;
+                    left: 0;
+                    top: 50px;
+                    height: 100%;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="header">header</div>
+        <div class="sidebar">sidebar</div>
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+    </body>
+</html>

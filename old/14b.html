@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{
+                font-family: Arial;
+                margin-top: 0;
+                margin-bottom: 17px;
+            }
+
+            body{
+                height: 3000px;
+            }
+
+            .sidebar{
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 100px;
+                background-color: lightgreen;
+            }
+
+            .cover{
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+
+            .modal{
+                position: fixed;
+                top: 290px;
+                bottom: 290px;
+                left: 500px;
+                right: 500px;
+                background-color: white;
+                padding-left: 10px;
+                padding-top: 10px;
+                border-radius: 8px;
+
+            }
+
+            .modal-title{
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar">right sidebar</div>
+        <div class="cover">.</div>
+        <div class="modal">
+            <p class="modal-title">Modal Title</p>
+            <p class="modal-message">This is a modal</p>
+            <button>Close</button>
+        </div>
+    </body>
+</html>

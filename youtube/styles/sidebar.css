@@ -1,0 +1,7 @@
+.sidebar{
+    position: fixed;
+    top: 67px;
+    left: 0;
+    width: 72px;
+    height: 100%;
+}

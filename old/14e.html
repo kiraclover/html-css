@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <style>
+            p{
+                margin-top: 0;
+                margin-bottom: 0;
+                font-family: Roboto, Arial;
+            }
+
+            .friend-profile-picture{
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                object-position: top;
+                border-radius: 50%;
+            }
+
+            .friend-suggestion{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: fixed;
+                top: 10px;
+                left: 60px;
+                right: 60px;
+            }
+
+            .friend-information{
+                display: flex;
+                align-items: center;
+            }
+
+            .friend-name{
+                margin-left: 10px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .friend-actions{
+                display: flex;
+            }
+
+            .add-friend-button, .message-button{
+                font-size: 14px;
+                font-family: Roboto, Arial;
+                font-weight: 500;
+                border: none;
+                border-radius: 6px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                padding-left: 13px;
+                padding-right: 13px;
+                cursor: pointer;
+                transition: opacity 0.15s;
+            }
+
+            .add-friend-button:hover, .message-button:hover{
+                opacity: 0.7;
+            }
+
+            .add-friend-button:active, .message-button:active{
+                opacity: 0.5;
+            }
+
+            .message-button{
+                margin-left: 6px;
+            }
+
+            .add-friend-button{
+                background-color: rgb(73, 116, 255);
+                color: white;
+                font-weight: 500;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="friend-suggestion">
+            <div class="friend-information">
+                <img class="friend-profile-picture" src="silly.jpg" />
+                <p class="friend-name">Oliver Cat</p>
+            </div>
+            <div class="friend-actions">
+                <button class="add-friend-button">Add Friend</button>
+                <button class="message-button">Message</button>
+            </div>
+        </div>
+    </body>
+</html>
