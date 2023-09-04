@@ -1,7 +1,31 @@
 .sidebar{
     position: fixed;
-    top: 67px;
+    top: 57px;
     left: 0;
     width: 72px;
-    height: 100%;
+    bottom: 0;
+    padding-top: 5px;
+    z-index: 2;
+    background-color: white;
+}
+
+.sidebar-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 74px;
+}
+
+.sidebar-button:hover{
+    cursor: pointer;
+}
+
+.sidebar-button-icon{
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+.sidebar-button-text{
+    font-size: 10px;
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                width: 320px;
+                position: relative;
+            }
+
+            p{
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .article-picture{
+                object-fit: cover;
+                height: 320px;
+                width: 320px;
+                object-position: top;
+            }
+
+            .off{
+                background-color: black;
+                color: white;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-left: 4px;
+                padding-right: 4px;
+                position: absolute;
+                top: 20px;
+                right: 0px;
+            }
+
+            .actions-section{
+                background-color: rgba(255, 255, 255, 0.5);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 220px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .amog{
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img class="article-picture" src="silly.jpg" />
+            <p class="off">20% OFF</p>
+            <div class="actions-section">
+                <button class="amog">Add to Cart</button>
+            </div>
+        </div>
+    </body>
+</html>

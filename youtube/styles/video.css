@@ -6,6 +6,10 @@
     width: 100%;
 }
 
+.video-preview:hover{
+    cursor: pointer;
+}
+
 .channel-picture-section{
     margin-top: 12px;
 }
@@ -23,6 +27,18 @@
 .video-title{
     font-weight: 500;
     font-size: 14px;
+    line-height: 20px;
+}
+
+@media (mix-width: 1000px) {
+    .video-title{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .channel-name, .video-info{
+        font-size: 14px;
+    }
 }
 
 .channel-name{
@@ -46,6 +62,44 @@
 .video-previews{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 8px;
+    column-gap: 20px;
     row-gap: 16px;
+}
+
+@media (max-width: 750px) {
+    .video-previews{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 721) and (max-width: 999px){
+    .video-previews{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-previews{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video-time{
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-weight: 500;
+    color: white;
+    border-radius: 2px;
+}
+
+.thumbnail-section{
+    position: relative;
 }

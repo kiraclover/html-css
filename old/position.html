@@ -14,6 +14,7 @@
 
                 .div2{
                     background-color: lightseagreen;
+                    position: relative;
                 }
 
                 .header{
@@ -24,6 +25,7 @@
                     left: 0;
                     right: 0;
                     height: 50px;
+                    z-index: 0;
                 }
 
                 body{
@@ -43,12 +45,34 @@
                     top: 50px;
                     height: 100%;
                 }
+
+                .absolute{
+                    background-color: red;
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    color: white;
+                }
+
+                .absolute2{
+                    background-color: red;
+                    position: absolute;
+                    bottom: 5px;
+                    right: 5px;
+                    color: white;
+                }
         </style>
     </head>
     <body>
         <div class="header">header</div>
-        <div class="sidebar">sidebar</div>
+        <div class="sidebar">
+            sidebar
+            <div class="absolute">X</div>
+        </div>
         <div class="div1">div1</div>
-        <div class="div2">div2</div>
+        <div class="div2">
+            div2
+            <div class="absolute2">22:31</div>
+        </div>
     </body>
 </html>
